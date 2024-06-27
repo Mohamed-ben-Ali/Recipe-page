@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font-family: "Young Serif", serif;
+    --title-font-weight: 700;
+    --body-font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: hsl(330, 100%, 98%);
+    font-size: 16px;
+    font-family: var(--body-font-family);
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    font-size: 2.5rem;
+}
+
+.container .description {
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    color: #666;
+    margin: 15px 0;
+}
+
+.container .preparation-time {
+    font-family: var(--body-font-family);
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .preparation-time h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+}
+
+.container .preparation-time ul li {
+    margin-left: 30px;
+    margin-top: 15px;
+    color: hsl(332, 51%, 32%);
+}
+
+.container .preparation-time ul li span.item-header {
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.container .preparation-time ul li span.item-desc {
+    color: hsl(30, 10%, 34%);
+}
+
+.ingredients {
+    margin: 30px 0;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 40px;
+}
+
+.ingredients h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 40px;
+}
+
+.ingredients ul li {
+    margin-top: 15px;
+    margin-left: 30px;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients ul li span.item-header {
+    color: hsl(30, 10%, 34%);
+    margin-left: 15px;
+}
+
+.instructions {
+    margin: 30px 0;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 40px;
+}
+
+.instructions h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 40px;
+}
+
+.instructions ol li {
+    margin-top: 15px;
+    margin-left: 30px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.instructions ol li .box {
+    margin-left: 15px;
+}
+
+.instructions ol li span.item-header {
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.instructions ol li span.item-desc {
+    color: hsl(30, 10%, 34%);
+    font-weight: normal;
+}
+
+.nutrition-section {
+    margin: 20px auto;
+}
+
+.nutrition-section h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.nutrition-section p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-section th,
+.nutrition-section td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nutrition-section td.details {
+    padding-left: 20px;
+    color: hsl(30, 10%, 34%);
+    font-weight: normal;
+}
+
+.nutrition-section td {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .preparation-time h2,
+    .ingredients h2,
+    .instructions h2,
+    .nutrition-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .preparation-time ul li span.item-header,
+    .ingredients ul li span.item-header,
+    .instructions ol li span.item-header {
+        margin-left: 5px;
+    }
+}
